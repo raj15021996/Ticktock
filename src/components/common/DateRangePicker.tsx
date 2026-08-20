@@ -105,7 +105,7 @@ export default function DateRangePicker({
             bg-white
             p-3
             shadow-lg
-
+            text-black
             sm:w-auto
             sm:min-w-[320px]
           "

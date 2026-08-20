@@ -7,7 +7,7 @@ interface TimesheetCardProps {
   days: TimesheetDay[];
   onAddTask: (dayDate: string) => void;
   onEditEntry: (dayDate: string, entry: TimesheetEntry) => void;
-  onDeleteEntry: (dayDate: string, entryId: string) => void;
+  onDeleteEntry: (entryId: string) => void;
 }
 
 export default function TimesheetCard({
@@ -59,7 +59,7 @@ export default function TimesheetCard({
             day={day}
             onAddTask={() => onAddTask(day.fullDate)}
             onEditEntry={(entry) => onEditEntry(day.fullDate, entry)}
-            onDeleteEntry={(entryId) => onDeleteEntry(day.fullDate, entryId)}
+            onDeleteEntry={(entryId) => onDeleteEntry(entryId)}
           />
         ))}
       </div>
