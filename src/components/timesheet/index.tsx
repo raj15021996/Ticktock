@@ -128,7 +128,7 @@ function TimesheetContent() {
             description: data.description,
             hours: data.hours,
           });
-        debugger
+      
       setTimesheetData(result?.week);
 
       forSuccess(`Entry ${isEditing ? "updated" : "created"} successfully!`);
